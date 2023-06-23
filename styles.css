@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 351px;
+  height: 623px;
+  border-radius: 39px;
+  background: linear-gradient(223deg, #0c0c0c 0%, #17181a 100%);
+}
+#buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.linha1bt {
+  width: 72px;
+  height: 62px;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  color: rgba(165, 165, 165, 1);
+  border-radius: 16px;
+  background: rgba(75, 75, 75, 0.42);
+  border: none;
+  cursor: pointer;
+}
+#divisao,
+#multiplicacao {
+  background-color: rgba(116, 0, 118, 1);
+}
