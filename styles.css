@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-  width: 401px;
+  width: 371px;
   height: 653px;
   border-radius: 39px;
   background: linear-gradient(223deg, #0c0c0c 0%, #17181a 100%);
@@ -24,7 +24,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 10px;
+  padding: 7px;
   margin-bottom: 109px;
 }
 .buttons {
@@ -55,13 +55,13 @@ body {
   padding: 10px;
 }
 #zero {
-  width: 135px;
+  width: 125px;
   padding: 1px 1px;
   border-radius: 16px;
   background: #363035;
   position: absolute;
   bottom: 30px;
-  left: 50px;
+  left: 36px;
   border: none;
   color: #29a8ff;
   font-size: 32px;
@@ -97,6 +97,9 @@ body {
   gap: 10px;
   padding: 10px;
   display: i;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
 }
 #igual {
@@ -141,4 +144,33 @@ height: 62px;
   justify-content: center;
   align-items: center;
 
+}
+#divisao{
+  width: 62px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  .buttons button{
+    transition: background-color 0.3s ease;
+  }
+.buttons button:hover{
+  background-color: #474245;
+  color: white;
+  transform: scale(1.1);  
+} 
+.coluna4 button:hover{  
+
+background: #740076;
+}
+#zero:hover{
+  background-color: #474245;
+  color: white;
+  transform: scale(1.1);
+}
+#ponto:hover{
+  background-color: #474245;
+  color: white;
+  transform: scale(1.1);  
 }
