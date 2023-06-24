@@ -9,30 +9,136 @@ body {
 }
 
 .container {
-  width: 351px;
-  height: 623px;
+  width: 401px;
+  height: 653px;
   border-radius: 39px;
   background: linear-gradient(223deg, #0c0c0c 0%, #17181a 100%);
+  display: flex;
+  align-items: center;
 }
-#buttons {
+
+.coluna1,
+.coluna2,
+.coluna3
+ {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  margin-bottom: 109px;
+}
+.buttons {
+  position: relative;
+  top: 140px;
+  border-radius: 39px;
+  width: 3500px;
+  height: 370px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.coluna1bt,
+.coluna2bt,
+.coluna3bt {
+  width: 52px;
+  border-radius: 16px;
+  background: #363035;
+  border: none;
+  margin: 5px 4px;
+  cursor: pointer;
+  color: #29a8ff;
+  font-size: 32px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+
+  gap: 10px;
+  padding: 10px;
+}
+#zero {
+  width: 135px;
+  padding: 1px 1px;
+  border-radius: 16px;
+  background: #363035;
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
+  border: none;
+  color: #29a8ff;
+  font-size: 32px;
+  font-family: Poppins;
+  font-weight: 500;
+  height: 10;
+}
+#ponto {
+  background: #363035;
+  width: 62px;
+  
+  flex-shrink: 0;
+  position: absolute;
+  bottom: 30px;
+  border: none;
+  color: #29a8ff;
+  font-size: 32px;
+  font-family: Poppins;
+  font-weight: 500;
+  border-radius: 16px;
+}
+.coluna4bt {
+  width: 62px;
+  border-radius: 12px;
+  background: #740076;
+  border: none;
+  margin: 5px 3px;
+  cursor: pointer;
+  color: #b2daff;
+  font-size: 32px;
+  font-family: Poppins;
+  font-weight: 500;
+  gap: 10px;
+  padding: 10px;
+  display: i;
+  
+}
+#igual {
+  height: 105px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
-.linha1bt {
-  width: 72px;
-  height: 62px;
-  font-size: 24px;
-  font-family: "Poppins", sans-serif;
-  color: rgba(165, 165, 165, 1);
-  border-radius: 16px;
-  background: rgba(75, 75, 75, 0.42);
-  border: none;
-  cursor: pointer;
+.coluna4{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  margin-bottom:  55px; 
 }
-#divisao,
-#multiplicacao {
-  background-color: rgba(116, 0, 118, 1);
+#mais{
+display: flex;
+width: 62px;
+height: 100px;
+padding: 6px 4px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+}
+#sub{
+  display: flex;
+  width: 62px;
+  padding: 6px 4px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+#multi{
+  width: 62px;
+height: 62px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
