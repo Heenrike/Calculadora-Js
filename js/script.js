@@ -1,18 +1,20 @@
-    function Corpo() {
-        let soma = document.querySelector("#mais");
-        let sub = document.querySelector("#sub");
-        let multi = document.querySelector("#multi");
-        let divisao = document.querySelector("#divisao");
-        let igual = document.querySelector("#igual");
-        let resultadovalue = document.querySelector("#resultadovalue"); 
-    
+function inserir(num) {
+  document.querySelector("#tela").textContent += num;
+}
 
-        let value =         
-        function resultado() {
-        resultadovalue.innerHTML = "<p>=10</p>";
-        }
-    
-        igual.addEventListener("click", resultado);
-    }
-    
-    Corpo()
+function Clear() {
+  document.querySelector("#tela").textContent = "";
+}
+
+function back() {
+  let tela = document.querySelector("#tela").textContent;
+  document.querySelector("#tela").textContent = tela.substring(0, tela.length - 1);
+}
+
+function soma() {
+  let tela = document.querySelector("#tela").textContent;
+
+  if (tela) {
+    document.querySelector("#tela").textContent = eval(tela);
+  }
+}

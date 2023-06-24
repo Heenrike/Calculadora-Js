@@ -6,50 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,500&display=swap" rel="stylesheet">
     <title>Calc</title>
 </head>
 
 <body>
     <div class="container">
         <div class="resultado">
-            <h1 id="conta">200+100</h1>
-            <h1 id="resultadovalue">=300</h1>
-
+        <div id="tela"><p></p></div>
         </div>
         <div class="buttons">
             <div class="coluna1">
-                <button class="coluna1bt">Ac</button>
-                <button class="coluna1bt">7</button>
-                <button class="coluna1bt">4</button>
-                <button class="coluna1bt">1</button>
-                <button id="zero" class="linha">0</button>
-
+                <button onclick="Clear()" class="coluna1bt">Ac</button>
+                <button onclick="inserir('7')" class="coluna1bt">7</button>
+                <button onclick="inserir('4')" class="coluna1bt">4</button>
+                <button onclick="inserir('1')" class="coluna1bt">1</button>
+                <button onclick="inserir('0')" id="zero" class="linha">0</button>
             </div>
             <div class="coluna2">
-                <button class="coluna2bt"><img src="fontes/ri_delete-back-2-line.svg" alt=""></button>
-                <button class="coluna2bt">8</button>
-                <button class="coluna2bt">5</button>
-                <button class="coluna2bt">2</button>
-
+                <button onclick="back()" class="coluna2bt"><img src="fontes/ri_delete-back-2-line.svg" alt=""></button>
+                <button onclick="inserir('8')" class="coluna2bt">8</button>
+                <button onclick="inserir('5')" class="coluna2bt">5</button>
+                <button onclick="inserir('2')" class="coluna2bt">2</button>
             </div>
             <div class="coluna3">
-                <button id="divisao" class="coluna3bt"><img src="fontes/Group 2.svg" alt=""></button>
-                <button class="coluna3bt">9</button>
-                <button class="coluna3bt">6</button>
-                <button class="coluna3bt">3</button>
-                <button id="ponto" class="linha">,</button>
-
+                <button onclick="inserir('/') " id="divisao" class="coluna3bt">/</button>
+                <button onclick="inserir('9')" class="coluna3bt">9</button>
+                <button onclick="inserir('6')" class="coluna3bt">6</button>
+                <button onclick="inserir('3')" class="coluna3bt">3</button>
+                <button onclick="inserir('.') " id="ponto" class="linha">,</button>
             </div>
             <div class="coluna4">
-                <button id="multi" class="coluna4bt"><img src="fontes/Group 3.png" alt=""></button>
-                <button id="sub" class="coluna4bt">-</button>
-                <button id="mais" class="coluna4bt">+</button>
-                <button id="igual" class="coluna4bt">=</button>
-
+                <button onclick="inserir('*')" id="multi" class="coluna4bt">*</button>
+                <button onclick="inserir('-')" id="sub" class="coluna4bt">-</button>
+                <button onclick="inserir('+')" id="mais" class="coluna4bt">+</button>
+                <button onclick="soma()" id="igual" class="coluna4bt">=</button>
             </div>
-
         </div>
     </div>
 
